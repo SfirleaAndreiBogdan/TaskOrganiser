@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-logo {
+  width: 400px;
+  animation: spin 5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.table{
+  padding: 5px;
+  text-align: center;
+}
+
+.home-container{
+
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.home-title{
+  font-size: 36px;
+  color: #d8d8d8;
+}
+
+.home-description{
+  color: #d8d8d8;
+}
+
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.par{
+  text-align: center;
+  font-weight: bold;
+}
+
+.quote-author {
+  text-align: center;
+  font-weight: bold;
+}
+
+.add-task-title {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.data-table {
+  background-color: rgba(51, 51, 51, 0.5); /* Culoare transparentă pentru fundalul tabelului */
+  color: #fff; /* Culoare albă pentru text */
+  border-collapse: collapse; /* Elimină spațiile între celule */
+  width: 100%;
+}
+
+.btnLeft{
+  margin-right: 30px;
+}
+
+.header{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.searchinp{
+  padding: 10px;
+  border: 1px solid #f0fff0;
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: #f0fff0;
+  font-size: 1em;
+  margin-left: auto;
+}
+
+.inputBox{
+  position: relative;
+  width: 250px;
+}
+
+form{
+  margin-bottom: 1em;
+}
+
+.inputBox input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f0fff0;
+  background: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: #f0fff0;
+  font-size: 1em;
+}
+
+
+.action-buttons{
+  display: inline;
+}
+
+.status-completed {
+  color: green;
+}
+
+.status-in-progress {
+  color: yellow;
+}
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #f0fff0;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: #f0fff0;
+    transform: translateX(10px) translateY(-7px);  
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: #282c34;
+    border-left:1px solid #f0fff0;
+    border-right: 1px solid #f0fff0;
+  }
